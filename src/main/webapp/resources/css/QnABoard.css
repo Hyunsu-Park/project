@@ -74,7 +74,7 @@ h1 {
 	min-width: 79px;
 }
 .titleArea > div:nth-child(2){
-	width: 50%;
+	width: 63%;
 	min-width: 120px;
 }
 .titleArea > div:nth-child(3){
@@ -110,7 +110,7 @@ h1 {
 	min-width: 79px;
 }
 .contentArea > div:nth-child(2){
-	width: 50%;
+	width: 63%;
 	min-width: 120px;
 }
 .contentArea > div:nth-child(2) > a {

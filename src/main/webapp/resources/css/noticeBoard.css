@@ -32,7 +32,7 @@ h1 {
 	min-width: 60px;
 }
 .titleArea > div:nth-child(2) {
-	width: 63%;
+	width: 70%;
 	min-width: 200px;
 }
 .titleArea > div:nth-child(3) {
@@ -40,11 +40,11 @@ h1 {
 	min-width: 85px;
 }
 .titleArea > div:nth-child(4) {
-	width: 8%;
+	width: 14%;
 	min-width: 60px;
 }
 .titleArea > div:nth-child(5) {
-	width: 10%;
+	width: 14%;
 	min-width: 60px;
 }
 .contentArea {
@@ -65,7 +65,7 @@ h1 {
 	min-width: 60px;
 }
 .contentArea > div:nth-child(2) {
-	width: 63%;
+	width: 70%;
 	min-width: 200px;
 	text-align: left;
 }
@@ -74,11 +74,11 @@ h1 {
 	min-width: 85px;
 }
 .contentArea > div:nth-child(4) {
-	width: 8%;
+	width: 14%;
 	min-width: 60px;
 }
 .contentArea > div:nth-child(5) {
-	width: 10%;
+	width: 14%;
 	min-width: 60px;
 }
 .contentArea > div > a {

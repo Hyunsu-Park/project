@@ -73,7 +73,7 @@ public class BoardController {
 	@GetMapping("/category/QnABoard")
 	public String getQnABoard(Model model) {
 		
-		List<QnAPostVO> QnAList = service.selectQnAList(6);
+		List<QnAPostVO> QnAList = service.selectQnAList(10);
 		
 		model.addAttribute("QnAList", QnAList);
 
