@@ -3,7 +3,7 @@ body{
 }
 body > .nav {
 	margin-left: 25%;
-	width: calc(50% - 25px);
+	width: 50%;
 }
 .contentArea {
 	position: relative;
@@ -84,7 +84,7 @@ div > a> img {
 
 .postArea > .exerciseBoard {
 	display: inline-block;
-	width: calc(100% - 25px);
+	width: 100%;
 	height: 350px;
 	border: 1px solid #ccc;
 	border-radius:5px;
@@ -108,7 +108,7 @@ div > a> img {
 
 .postArea > .postBoard {
 	display: inline-block;
-	width: calc(100% - 25px);
+	width: 100%;
 	margin-top: 10px;
 	height: 350px;
 	border: 1px solid #ccc;
