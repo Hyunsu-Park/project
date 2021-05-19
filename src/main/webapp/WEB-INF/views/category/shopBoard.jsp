@@ -29,7 +29,7 @@
 			<div>상품이름</div>
 			<div>상품이미지</div>
 			<div>판매자</div>
-			<div>상품등록날짜</div>
+			<div>상품등록일</div>
 		</div>
 		<c:forEach items="${productList}" var="item">
 			<div class="contentArea">
@@ -37,7 +37,7 @@
 				<div><a href="#">${item.pi_name}</a></div>
 				<div><a href="#"><img src="${item.pi_img}" alt="" /></a></div>
 				<div>${item.pi_seller}</div>
-				<div><fmt:formatDate value="${item.pi_reg_date}" pattern="yyyy-MM-dd hh:mm"></fmt:formatDate></div>
+				<div><fmt:formatDate value="${item.pi_reg_date}" pattern="yyyy-MM-dd"></fmt:formatDate></div>
 			</div>
 		</c:forEach>
 	

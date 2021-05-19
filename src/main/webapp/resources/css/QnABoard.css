@@ -5,6 +5,7 @@ body{
 	margin-left: 20%;
 	width: 60%;
 	margin-top: 50px;
+	margin-bottom: 70px;
 }
 .buttonBox {
 	text-align: center;
@@ -14,8 +15,8 @@ body{
 	font-size: 22px;
 	font-weight: 600;
 	margin: 30px;
-	width: 300px;
-	height: 300px;
+	width: 70%;
+	height: 110px;
 	border-radius:10px;	
 }
 .buttonBox > form {
@@ -50,7 +51,7 @@ h1 {
 
 .titleArea {
 	margin-top: 50px;
-	height: 38px;
+	height: 35px;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	text-align: center;
@@ -73,12 +74,12 @@ h1 {
 	min-width: 79px;
 }
 .titleArea > div:nth-child(2){
-	width: 63%;
-	min-width: 200px;
+	width: 50%;
+	min-width: 120px;
 }
 .titleArea > div:nth-child(3){
 	width: 10%;
-	min-width: 71px;
+	min-width: 110px;
 }
 .titleArea > div:nth-child(4){
 	width: 5%;
@@ -86,7 +87,7 @@ h1 {
 }
 
 .contentArea {
-	height: 38px;
+	height: 35px;
 	border-bottom: 1px solid #eee;
 	text-align: center;
 	white-space: nowrap;
@@ -109,21 +110,27 @@ h1 {
 	min-width: 79px;
 }
 .contentArea > div:nth-child(2){
-	width: 63%;
-	min-width: 200px;
+	width: 50%;
+	min-width: 120px;
 }
 .contentArea > div:nth-child(2) > a {
 	text-decoration: none;
 }
 .contentArea > div:nth-child(3){
 	width: 10%;
-	min-width: 71px;
+	min-width: 110px;
 }
 .contentArea > div:nth-child(4){
 	width: 5%;
 	min-width: 36px;
 }
-
+.contentArea > div:nth-child(5){
+	min-width: 90px;
+}
+.buttonArea{
+	white-space: nowrap;	
+	overflow: hidden;
+}
 .modify:hover {
 	background-color: gray;
 	color: #fff;
@@ -132,7 +139,6 @@ h1 {
 	background-color: red;
 	color: #fff;
 }
-
 
 
 .QnABoard > .searchBox {
