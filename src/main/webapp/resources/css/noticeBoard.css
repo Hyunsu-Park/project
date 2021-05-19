@@ -2,6 +2,7 @@ body{
 	background-color: #eee;
 }
 .noticeBoard {
+	margin-top: 80px;
 	margin-left: 20%;
 	width: 60%;
 	margin-bottom: 70px;

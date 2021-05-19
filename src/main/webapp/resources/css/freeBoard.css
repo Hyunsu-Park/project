@@ -2,6 +2,7 @@ body{
 	background-color: #eee;
 }
 .freeBoard {
+	margin-top: 80px;
 	margin-left: 25%;
 	width: 50%;
 	margin-bottom: 70px;

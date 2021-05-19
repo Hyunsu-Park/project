@@ -2,6 +2,7 @@ body{
 	width: 100%;		
 }
 body > .nav {
+	margin-top: 60px;
 	margin-left: 25%;
 	width: 50%;
 }
@@ -72,7 +73,7 @@ div > a> img {
 	display: inline-block;
 	position: absolute;
 	/*width: 902.5px;*/
-	width: 75%;
+	width: 78%;
 
 
 	margin-left: 160px;
