@@ -84,6 +84,9 @@ h1 {
 	width: 11%;
 	min-width: 100px;
 }
+.contentArea > div:nth-child(6) {
+	float: right;
+}
 .contentArea > div > a {
 	text-decoration: none;
 } 
@@ -98,7 +101,6 @@ h1 {
 	height: 30px;
 	font-size: 17px;
 	cursor: pointer;
-	float: right;
 	margin-right:3%;
 }
 .funcBox {

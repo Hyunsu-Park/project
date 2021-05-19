@@ -36,10 +36,10 @@
 				<div><a href="#">${item.fp_title}</a></div>
 				<div>${item.fp_owner}</div>
 				<div>${item.fp_reg_date}</div>
-<!-- 나중에 만들기	<div>조회수</div> -->
 				<div>${item.fp_like}</div>
-				<button class="delete">삭제</button>
-	<!-- 		세션데이터로 등급받아서 관리자+작성자 삭제기능 //들어가면 수정도 가능하게  -->
+				<!-- <button class="delete">삭제</button> 	들어가서 삭제하기 		
+							세션데이터로 등급받아서 관리자+작성자 삭제기능 //들어가면 수정도 가능하게  -->
+							<!-- 안쪽에 조회수도 만들어주면 좋고 아니면 말구	<div>조회수</div> -->
 			</div>
 			
 		</c:forEach>
