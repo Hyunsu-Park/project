@@ -8,12 +8,12 @@
 }
 .headerNav {
 	display: inline-block;
-	width: 85%;
+	width: 80%;
 /* 	white-space : nowrap; */
 /* 	overflow: hidden; */
 }
 .headerNav > div {
-	margin-left: 8%;
+	margin-left: 6.5%;
 	width: 8%;
 	display: inline-block;
 	margin-top: 17px;
@@ -45,7 +45,7 @@
 .userBox {
 	position: absolute;
 	top: 70px;
-	left: 85%;
+	left: 80%;
 	min-width: 223px;
 }
 .userBox > a {

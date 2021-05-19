@@ -1,3 +1,6 @@
+body{
+	width: 100%;		
+}
 body > .nav {
 	margin-left: 25%;
 	width: 50%;
@@ -6,10 +9,10 @@ body > .nav {
 	position: relative;
 }
 .slickArea {
-	width: 1060px;
+	width: 100%;
 }
 div > a> img {
-	width: 1060px !important;	
+	width: 100% !important;	
 	height:400px !important;
 }
 .sideArea {
@@ -68,7 +71,10 @@ div > a> img {
 .postArea {
 	display: inline-block;
 	position: absolute;
-	width: 902.5px;
+	/*width: 902.5px;*/
+	width: 75%;
+
+
 	margin-left: 160px;
 }
 .postArea > div {
@@ -78,7 +84,7 @@ div > a> img {
 
 .postArea > .exerciseBoard {
 	display: inline-block;
-	width: 430px;
+	width: calc(100% - 25px);
 	height: 350px;
 	border: 1px solid #ccc;
 	border-radius:5px;
@@ -102,7 +108,8 @@ div > a> img {
 
 .postArea > .postBoard {
 	display: inline-block;
-	width: 430px;
+	width: calc(100% - 25px);
+	margin-top: 10px;
 	height: 350px;
 	border: 1px solid #ccc;
 	border-radius:5px;
