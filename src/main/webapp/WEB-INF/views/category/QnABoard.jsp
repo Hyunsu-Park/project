@@ -86,10 +86,10 @@
 				<div><a href="#">${item.qp_title}</a></div>
 				<div>${item.qp_reg_date}</div>
 				<div>${item.qp_answer}</div>
-				<div class="buttonArea">
+				<!-- <div class="buttonArea">
 					<button class="modify">수정</button>
 					<button class="delete">삭제</button>
-				</div>
+				</div> 						들어가서 만들어주기-->
 			</div>
 		</c:forEach>
 		<div class="funcBox">

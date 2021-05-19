@@ -106,7 +106,7 @@ h1 {
 	margin-left: 10px;
 }
 .contentArea > div:nth-child(1){
-	width: 8%;
+	width: 7%;
 	min-width: 79px;
 }
 .contentArea > div:nth-child(2){
@@ -124,13 +124,11 @@ h1 {
 	width: 5%;
 	min-width: 36px;
 }
-.contentArea > div:nth-child(5){
-	min-width: 90px;
-}
-.buttonArea{
+
+/* .buttonArea{
 	white-space: nowrap;	
 	overflow: hidden;
-}
+} 
 .modify:hover {
 	background-color: gray;
 	color: #fff;
@@ -138,14 +136,13 @@ h1 {
 .delete:hover {
 	background-color: red;
 	color: #fff;
-}
+} 	여기말고 write에 넣음*/
 
 
 .QnABoard > .searchBox {
 	text-align: center;
 	position: relative;
 	display: block;
-/* 	left: 50px; */
 }
 .QnABoard > .searchBox > input {
 	height: 20px;

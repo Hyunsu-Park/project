@@ -58,7 +58,7 @@
 				<div>${item.uv_category_seq}카테고리</div>
 <!-- 					select 로 카테고리 seq 의 운동 보여주기-->
 				<div class="btnArea">
-					<button class="modify">수정</button>
+					<!-- <button class="modify">수정</button> 안쓰기 -->
 					<button class="delete">삭제</button>
 				</div>
 			</div>

@@ -32,20 +32,16 @@ h1 {
 	min-width: 60px;
 }
 .titleArea > div:nth-child(2) {
-	width: 70%;
+	width: 68%;
 	min-width: 200px;
 }
 .titleArea > div:nth-child(3) {
 	width: 7%;
-	min-width: 85px;
+	min-width: 60px;
 }
 .titleArea > div:nth-child(4) {
 	width: 14%;
-	min-width: 60px;
-}
-.titleArea > div:nth-child(5) {
-	width: 14%;
-	min-width: 60px;
+	min-width: 106px;
 }
 .contentArea {
 	border-bottom: 1px solid #ddd;
@@ -65,21 +61,17 @@ h1 {
 	min-width: 60px;
 }
 .contentArea > div:nth-child(2) {
-	width: 70%;
+	width: 68%;
 	min-width: 200px;
 	text-align: left;
 }
 .contentArea > div:nth-child(3) {
 	width: 7%;
-	min-width: 85px;
+	min-width: 60px;
 }
 .contentArea > div:nth-child(4) {
 	width: 14%;
-	min-width: 60px;
-}
-.contentArea > div:nth-child(5) {
-	width: 14%;
-	min-width: 60px;
+	min-width: 106px;
 }
 .contentArea > div > a {
 	text-decoration: none;
