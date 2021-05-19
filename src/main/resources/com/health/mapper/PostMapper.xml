@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.health.mapper.PostMapper">
+	<select id="selectPostList" resultType="com.health.vo.FreePostVO">	<!-- 자유게시판 최신게시글들 -->
+		SELECT * FROM free_post ORDER BY fp_seq DESC LIMIT #{num}
+	</select>
+	<select id="selectNoticeList" resultType="com.health.vo.NoticePostVO">	<!-- 공지사항게시판 최신게시글들 -->
+		SELECT * FROM notice_post ORDER BY np_seq DESC  LIMIT #{num}
+	</select>
+	
+	<select id="selectQnAList" resultType="com.health.vo.QnAPostVO">	<!-- QnA 최신게시글들 -->
+		SELECT * FROM qna_post ORDER BY qp_seq DESC LIMIT #{num}
+	</select>
+</mapper>

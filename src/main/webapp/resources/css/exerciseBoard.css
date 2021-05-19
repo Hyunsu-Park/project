@@ -1,0 +1,245 @@
+body{
+	background-color: #eee;
+}
+.exerciseBoard {
+	margin-left: 20%;
+	width: 60%;
+/* 	overflow: auto; */
+	margin-bottom: 70px;
+}
+button {
+	cursor: pointer;
+}
+h1 {
+	margin: 30px;
+	text-align: center;
+	font-weight: 650;
+	font-size: 22px;
+	color: rgb(10, 200, 246);
+}
+.titleArea  {
+	border-top :1px solid #bbb;
+	border-bottom :1px solid #bbb;
+	height: 45px;
+	white-space : nowrap;
+	overflow: hidden;
+}
+.titleArea > div {
+	display: inline-block;
+	margin-top: 14px;
+	font-size: 17px;
+	font-weight: 600;
+	text-align: center;
+}
+.titleArea > div:nth-child(1) {
+	width: 12%;
+	min-width: 100px;
+}
+.titleArea > div:nth-child(2) {
+	width: 26%;
+	min-width: 100px;
+}
+.titleArea > div:nth-child(3) {
+	width: 26%;
+	min-width: 100px;
+}
+.titleArea > div:nth-child(4) {
+	width: 12%;
+	min-width: 100px;
+}
+.titleArea > div:nth-child(5) {
+	width: 11%;
+	min-width: 100px;
+}
+.contentArea {
+	border-bottom: 1px solid #ddd;
+	height: 35px;
+	white-space : nowrap;
+	overflow: hidden;
+}
+.contentArea > div {
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: 550;
+	text-align: center;
+}
+.contentArea > div:nth-child(1) {
+	width: 12%;
+	min-width: 100px;
+}
+.contentArea > div:nth-child(2) {
+	width: 26%;
+	min-width: 100px;
+}
+.contentArea > div:nth-child(3) {
+	width: 26%;
+	min-width: 100px;
+}
+.contentArea > div:nth-child(4) {
+	width: 12%;
+	min-width: 100px;
+}
+.contentArea > div:nth-child(5) {
+	width: 11%;
+	min-width: 100px;
+}
+.contentArea > div > a {
+	text-decoration: none;
+} 
+
+.addBtnArea {
+	position: relative;
+	display: block;
+	height: 30px;
+}
+.insert{
+	width: 90px;
+	height: 30px;
+	font-size: 17px;
+	cursor: pointer;
+	float: right;
+	margin-right:30px;
+}
+.funcBox {
+	white-space : nowrap;
+	width: 100%;
+	height: 30px;
+}
+
+.insert:hover, .modify:hover  {
+	background-color: green;
+	color: #fff;
+}
+
+.delete:hover {
+	background-color: red;
+	color: #fff;
+}
+.pager { 
+	display: inline-block;
+	top: 15px;
+	width:100%;
+	text-align: center;
+	cursor: pointer;
+}
+.pager > img {
+	text-align: center;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+.exerciseBoard > .searchBox {
+	text-align: center;
+	position: relative;
+	display: block;
+}
+.exerciseBoard > .searchBox > input {
+	height: 20px;
+}
+.exerciseBoard > .searchBox > button {
+	position: absolute;
+	height: 25px;
+	cursor: pointer;
+}
+
+
+
+.ad1 {
+	position: fixed;
+	top: 150px;
+	right: 30px;
+
+}
+.ad1 > button {
+	position: fixed;
+	top: 160px;
+	right: 40px;
+}
+.ad1 > a > img {
+	width: 200px;
+	height: 200px;
+	
+}
+
+.ad2 {
+	position: fixed;
+	top: 120px;
+	left: 30px;
+}
+.ad2 > button {
+	position: fixed;
+	top: 130px;
+	left: 200px;
+}
+.ad2 > a > img {
+	width: 200px;
+	height: 200px;
+}
+
+
+.ad3 {
+	position: fixed;
+	top: 430px;
+	right: 30px;
+}
+.ad3 > button {
+	position: fixed;
+	top: 440px;
+	right: 40px;
+}
+.ad3 > a > img {
+	width: 200px;
+	height: 200px;
+}
+
+.ad4 {
+	position: fixed;
+	top: 340px;
+	left: 30px;
+}
+.ad4 > button {
+	position: fixed;
+	top: 350px;
+	left: 200px;
+}
+.ad4 > a > img {
+	width: 200px;
+	height: 200px;
+}
+
+.ad5 {
+	position: fixed;
+	top: 560px;
+	left: 30px;
+}
+.ad5 > button {
+	position: fixed;
+	top: 570px;
+	left: 200px;
+}
+.ad5 > a > img {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

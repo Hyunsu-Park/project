@@ -1,0 +1,53 @@
+.headerBox {
+	position: fixed;
+	width: 100%;
+	height: 55px;
+	background-color: skyblue;
+	position: relative;
+	white-space : nowrap;
+}
+.headerNav {
+	display: inline-block;
+	width: 85%;
+/* 	white-space : nowrap; */
+/* 	overflow: hidden; */
+}
+.headerNav > div {
+	margin-left: 8%;
+	width: 8%;
+	display: inline-block;
+	margin-top: 17px;
+	font-weight: 700;
+	font-size: 20px;
+	min-width : 100px;
+}
+.headerNav > div > a {
+	text-decoration: none;
+	color: #fff;
+	
+}
+.searchBox {
+	display: inline-block;
+	position: absolute;
+	margin-top: 17px;
+	min-width: 219px;
+	position: relative;
+	white-space : nowrap;
+}
+.searchBox > input {
+	height: 18px;
+}
+.searchBox > button {
+	position: absolute;
+	cursor: pointer;
+}
+
+.userBox {
+	position: absolute;
+	top: 70px;
+	left: 85%;
+	min-width: 223px;
+}
+.userBox > a {
+	text-decoration: none;
+}

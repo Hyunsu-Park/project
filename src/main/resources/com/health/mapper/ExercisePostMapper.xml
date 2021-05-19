@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.health.mapper.ExercisePostMapper">
+	<select id="selectExerciseList" resultType="com.health.vo.ExercisePostVO">
+		SELECT * FROM user_volume WHERE uv_id=#{id}
+	</select>
+</mapper>

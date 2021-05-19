@@ -1,0 +1,89 @@
+body {
+	background-color: #ddd;
+	margin-left: 28%;
+	width: 44%;
+	height: 1000px;
+	min-width: 600px;
+}
+.nav {
+	
+	border: 1px solid #f4f4f4;
+/* 	margin-top: 5%; */
+/* 	border-radius:10px;	 */
+	padding: 0 100px;
+	padding-top: 150px;
+	background-color: #f4f4f4;
+height: 1000px;
+/* 	box-shadow : 2px 2px 10px 10px skyblue; */
+	position: relative;
+}
+.nav > h1 {
+	margin-bottom: 15px;
+	font-weight: 650;
+	font-size: 22px;
+	text-align: center;
+}
+.nav > select {
+	right: 93px;
+	position: absolute;
+	border-radius:5px;
+	height: 30px;
+	width: 120px;
+}
+.nav > div > input {
+	border-radius : 5px;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 30px;
+	font-size: 22px;
+}
+.nav > div > textarea {
+	border-radius : 5px;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 400px;
+	font-size: 22px;
+}
+/* .nav > div:nth-child(5) { */
+/* 	display: inline-block; */
+/* 	width: 35%; */
+/* 	margin-bottom: 20px; */
+/* } */
+/* .nav > div:nth-child(6) { */
+/* 	display: inline-block; */
+/* 	width: 60%; */
+/* 	margin-bottom: 20px; */
+/* } */
+.btnArea > button {
+	width: 100px;
+	height: 35px;
+	font-weight: 550;
+	font-size: 18px;
+	border-radius:5px;
+}
+.modifyBtn, .insertBtn {
+	float: right;
+}
+
+.backBtn:hover {
+	background-color: gray;
+	color: #fff;
+}
+.modifyBtn:hover, .insertBtn:hover {
+	background-color: #008040;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

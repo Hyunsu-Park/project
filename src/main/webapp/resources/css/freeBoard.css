@@ -1,0 +1,148 @@
+body{
+	background-color: #eee;
+}
+.freeBoard {
+	margin-left: 15%;
+	width: 70%;
+	margin-bottom: 70px;
+}
+h1 {
+	margin: 30px;
+	text-align: center;
+	font-weight: 650;
+	font-size: 22px;
+	color: rgb(10, 200, 246);
+}
+.titleArea  {
+	border-top :1px solid #bbb;
+	border-bottom :1px solid #bbb;
+	height: 45px;
+	white-space : nowrap;
+	overflow: hidden;
+}
+.titleArea > div {
+	display: inline-block;
+	margin: 14px;
+	font-size: 17px;
+	font-weight: 600;
+	text-align: center;
+}
+.titleArea > div:nth-child(1) {
+	width: 5%;
+	min-width: 60px;
+}
+.titleArea > div:nth-child(2) {
+	width: 55%;
+	min-width: 480px;
+}
+.titleArea > div:nth-child(3) {
+	width: 7%;
+	min-width: 85px;
+}
+.titleArea > div:nth-child(4) {
+	width: 10%;
+	min-width: 120px;
+}
+.titleArea > div:nth-child(5) {
+	width: 5%;
+	min-width: 60px;
+}
+.contentArea {
+	border-bottom: 1px solid #ddd;
+	height: 45px;
+	white-space : nowrap;
+	overflow: hidden;
+}
+.contentArea > div {
+	display: inline-block;
+	margin: 14px;
+	font-size: 16px;
+	font-weight: 550;
+	text-align: center;
+}
+.contentArea > div:nth-child(1) {
+	width: 5%;
+	min-width: 60px;
+}
+.contentArea > div:nth-child(2) {
+	width: 55%;
+	min-width: 480px;
+	text-align: left;
+}
+.contentArea > div:nth-child(3) {
+	width: 7%;
+	min-width: 85px;
+}
+.contentArea > div:nth-child(4) {
+	width: 10%;
+	min-width: 120px;
+}
+.contentArea > div:nth-child(5) {
+	width: 5%;
+	min-width: 60px;
+}
+.contentArea > div > a {
+	text-decoration: none;
+} 
+
+.delete:hover {
+	background-color: red;
+	color: #fff;	
+}
+.funcBox {
+	white-space : nowrap;
+	width: 100%;
+	height: 30px;
+}
+
+
+.addBtnArea {
+	position: relative;
+	display: block;
+	height: 30px;
+}
+.addBtnArea > form > input {
+	display: none;
+}
+.addBtn{
+	width: 110px;
+	height: 30px;
+	font-size: 17px;
+	cursor: pointer;
+	float: right;
+	margin-right: 20px;
+}
+.addBtn:hover {
+	background-color: #808080;
+	color: #fff;
+}
+
+.freeBoard > .searchBox {
+	text-align: center;
+	position: relative;
+	display: block;
+}
+.freeBoard > .searchBox > input {
+	height: 20px;
+}
+.freeBoard > .searchBox > button {
+	position: absolute;
+	height: 25px;
+	cursor: pointer;
+}
+
+.pager { 
+	display: inline-block;
+	top: 15px;
+	width:100%;
+	text-align: center;
+	cursor: pointer;
+}
+.pager > img {
+	text-align: center;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+

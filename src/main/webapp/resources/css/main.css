@@ -1,0 +1,153 @@
+body > .nav {
+	margin-left: 25%;
+	width: 50%;
+}
+.contentArea {
+	position: relative;
+}
+.slickArea {
+	width: 1060px;
+}
+div > a> img {
+	width: 1060px !important;	
+	height:400px !important;
+}
+.sideArea {
+	width: 150px;
+	height: 90%;
+	display: inline-block;
+	position: absolute;
+}
+.userInfoNav {
+	display: inline-block;
+	border: 1px solid #ccc;
+	width: 150px;
+	height: 350px;
+	border-radius : 5px;
+	position: relative;	
+}
+.profileImg > img {
+	width: 150px;
+	height: 150px;
+}
+
+.userInfoNav > div{
+	margin-top: 15px;
+	font-size: 18px;	
+	position: absolute;
+}
+.userInfoNav > div:nth-child(1) {
+	margin-top: 20px;
+}
+.userInfoNav > div:nth-child(2) {
+	margin-top: 180px;
+	margin-left: 15px;
+}
+.userInfoNav > div:nth-child(2) {
+	margin-top: 210px;
+	margin-left: 15px;
+}
+.userInfoNav > div:nth-child(3) {
+	margin-top: 240px;
+	margin-left: 15px;
+}
+.userInfoNav > div:nth-child(4) {
+	margin-top: 270px;
+	margin-left: 15px;
+}
+.userInfoNav > div:nth-child(5) {
+	margin-top: 310px;
+	margin-left: 15px;
+	
+}
+ .profileImg {
+	width: 150px;
+	height: 150px;
+}
+
+.postArea {
+	display: inline-block;
+	position: absolute;
+	width: 902.5px;
+	margin-left: 160px;
+}
+.postArea > div {
+	margin-left: 15px;
+	float: left;
+}
+
+.postArea > .exerciseBoard {
+	display: inline-block;
+	width: 430px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-radius:5px;
+}
+.postArea > .exerciseBoard > h1 {
+	text-align: center;
+	margin: 15px;
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(10, 200, 246);
+}
+.postArea > .exerciseBoard > div {
+	margin-left: 20px;
+	font-size:18px;
+	font-weight: 550;
+	height: 30px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.postArea > .postBoard {
+	display: inline-block;
+	width: 430px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-radius:5px;
+}
+.postArea > .postBoard > h1 {
+	text-align: center;
+	margin: 15px;
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(10, 200, 246);
+}
+.postArea > .postBoard > div {
+	margin-left: 20px;
+	font-size:18px;
+	font-weight: 550;
+	height: 30px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.postArea > .shopBaord {
+	display: inline-block;
+	width: 420px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-radius:5px;
+}	
+.postArea > .shopBaord > h1 {
+	text-align: center;
+	margin: 15px;
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(10, 200, 246);
+}
+.postArea > .shopBaord > div {
+	margin-left: 20px;
+	font-size:18px;
+	font-weight: 550;
+	height: 30px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.profileModify:hover {
+	background-color: gray;
+	color: #fff;
+}

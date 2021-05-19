@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.health.mapper.ProductMapper">
+	<select id="selectProductList" resultType="com.health.vo.ProductVO">
+		SELECT * FROM product_info ORDER BY pi_seq DESC Limit #{num}
+	</select>
+	<select id="selectproductCategory" resultType="com.health.vo.ProductCategoryVO">
+		SELECT pc_seq AS seq, pc_kinds AS kinds FROM product_category
+	</select>
+
+</mapper>

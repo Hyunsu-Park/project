@@ -1,0 +1,37 @@
+.footerNav {
+	margin-top: 10px;
+	border-top: 1px solid #ccc;
+	position: fixed;
+	width: 100%;
+	bottom:0;
+	height: 50px;
+	background-color: #fff;
+	z-index: 9;
+}
+.footerNav > div {
+	display: inline-block;
+	font-size: 15px;
+}
+
+.footerNav > div {
+	position: fixed;
+	margin-left: 3%;
+	margin-top: 15px;
+	min-width: 222px;
+/* 	white-space:nowrap; */
+}
+.footerNav > div:nth-child(1){
+	left: 16%;
+}
+.footerNav > div:nth-child(2){
+	left: 32%;
+}
+.footerNav > div:nth-child(3){
+	left: 48%;
+}
+.footerNav > div:nth-child(4){
+	left: 64%;
+}
+.footerNav > div > a {
+	text-decoration: none;	
+}
