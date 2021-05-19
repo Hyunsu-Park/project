@@ -3,12 +3,12 @@ body{
 }
 body > .nav {
 	margin-left: 25%;
-	width: 50%;
+	width: calc(50% - 25px);
 }
 .contentArea {
 	position: relative;
 }
-.slickArea {
+.slickArea {	
 	width: 100%;
 }
 div > a> img {
@@ -113,6 +113,7 @@ div > a> img {
 	height: 350px;
 	border: 1px solid #ccc;
 	border-radius:5px;
+	margin-bottom: 70px;	
 }
 .postArea > .postBoard > h1 {
 	text-align: center;
