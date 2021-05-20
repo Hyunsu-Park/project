@@ -51,7 +51,7 @@
 <!-- 		일별(페이징해서)로 데이터를 보내주기 -->
 		<c:forEach items="${exerciseList}" var="item">
 			<div class="contentArea">
-				<div class="name">${item.uv_exercise_name}</div>
+				<div>${item.uv_exercise_name}</div>
 				<div>${item.uv_weight}kg</div>
 				<div>${item.uv_amount}개</div>
 				<div>${item.uv_bt}초</div>

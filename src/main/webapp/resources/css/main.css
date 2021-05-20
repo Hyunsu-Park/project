@@ -74,9 +74,22 @@ div > a> img {
 	position: absolute;
 	/*width: 902.5px;*/
 	width: 78%;
-
-
 	margin-left: 160px;
+}
+.exerciseBoard{
+	overflow: hidden;
+	position: relative;
+}
+.exerciseBoard a {
+	right: 0;	
+	top: 10px;
+	margin-right: 10px;
+	font-size: 17px;
+	text-decoration: none;
+	position: absolute;
+}
+.exerciseBoard > div{
+	display: inline-block;
 }
 .postArea > div {
 	margin-left: 15px;
@@ -156,6 +169,11 @@ div > a> img {
     text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.postBoard > div > a{
+	text-decoration: none;	
+	/* color:black; */
+}
+
 .profileModify:hover {
 	background-color: gray;
 	color: #fff;

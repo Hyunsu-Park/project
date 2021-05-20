@@ -95,13 +95,14 @@ h1 {
 	position: relative;
 	display: block;
 	height: 30px;
+	float: right;
+	margin-right:2%;
 }
 .insert{
 	width: 90px;
 	height: 30px;
 	font-size: 17px;
 	cursor: pointer;
-	margin-right:3%;
 }
 .funcBox {
 	white-space : nowrap;

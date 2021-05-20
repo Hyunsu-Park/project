@@ -21,12 +21,12 @@ public class UserAPIController {
 	public Map<String, String> getUserLogin(@RequestBody LoginVO vo, HttpSession session) {
 		Map<String, String> resultMap = new HashMap<>();
 
-		System.out.println(vo.getId());
+		// System.out.println(vo.getId());
 		Integer result = service.userLogin(vo);
 
 		if( result == 1) {
 			resultMap.put("status","success");
-			resultMap.put("message","로그인 되었습니다.");
+			resultMap.put("message",vo.getId()+ "님 반갑습니다.");
 			session.setAttribute("user", vo.getId());
 		}
 		else {

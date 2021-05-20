@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.health.mapper.PostMapper;
 import com.health.vo.FreePostVO;
+import com.health.vo.MainPostVO;
 import com.health.vo.NoticePostVO;
 import com.health.vo.QnAPostVO;
 
@@ -22,5 +23,11 @@ public class PostService {
 	}
 	public List<QnAPostVO> selectQnAList (Integer num) {
 		return mapper.selectQnAList(num);
+	}
+	public List<MainPostVO> selectMainFreePost(Integer num) {
+		return mapper.selectMainFreePost(num);
+	}
+	public List<MainPostVO> selectMainNoticePost(Integer num) {
+		return mapper.selectMainNoticePost(num);
 	}
 }

@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ include file="/WEB-INF/views/include/header.jsp" %>
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 <!DOCTYPE html>
@@ -43,52 +44,25 @@
 					<div>게시글 17개</div>
 					<div><button class="profileModify">프로필 수정</button></div>
 				</div>
-			
 			</div>
-		<div class="postArea">
-			<div class="exerciseBoard">
-				<h1>최근 운동 내역</h1>
-				<div>운동이름/ 무게 / 갯수 / 쉬는시간 / 카테고리</div>
-				<div>#################</div>
-				<div>3################</div>
-				<div>################</div>
-				<div>################</div>
-				<div>############################</div>
-				<div>################</div>
-				<div>################</div>
-				<div>################</div>
-				<div>################################</div>
-			</div>
+			<div class="postArea">
+				<div class="exerciseBoard">
+					<a href="/category/exerciseBoard">내역 더보기</a>
+					<h1>최근 운동 내역</h1>
+					<c:forEach items="${exerciseList}" var="item">
+						<div>[${item.uv_exercise_name}/${item.uv_weight}kg/${item.uv_amount}개/${item.uv_bt}초]</div>
+					</c:forEach>
+				</div>
 			
-			<div class="postBoard">
-<!-- 			게시글 전체 조인 걸어서 최신글 빼오기 -->
-				<h1>최근 작성 게시글</h1>
-				<div><a href="">[공지]게시글 전체 조인 걸어서 최신글 빼오기#####</a></div>
-				<div><a href="">[자유]게시글 전체 조인 걸어서 최신글 빼오기@@@@@@</a></div>
-				<div><a href="">a태그 밑줄 없애주기 글자색바꾸기</a></div>
-				<div><a href="">4</a></div>
-				<div><a href="">5</a></div>
-				<div><a href="">6</a></div>
-				<div><a href="">7</a></div>
-				<div><a href="">8</a></div>
-				<div><a href="">9</a></div>
-				<div><a href="">10</a></div>
-			</div>
-			
-	<!-- 		<div class="shopBaord"> -->
-	<!-- 			<h1>샵 인기상품</h1> -->
-	<!-- 			<div>1</div> -->
-	<!-- 			<div>2</div> -->
-	<!-- 			<div>3</div> -->
-	<!-- 			<div>4</div> -->
-	
-	<!-- 			<h1>샵 최신상품</h1> -->
-	<!-- 			<div>6</div> -->
-	<!-- 			<div>7</div> -->
-	<!-- 			<div>8</div> -->
-	<!-- 			<div>9</div> -->
-	
-	<!-- 		</div> -->
+				<div class="postBoard">
+					<h1>최신 게시글</h1>
+					<c:forEach items="${noticeList}" var="item">
+						<div>[공지]<a href="/category/noticeBoard">${item.title}</a></div>
+					</c:forEach>
+					<c:forEach items="${freeList}" var="item">
+						<div>[자유]<a href="/category/freeBoard">${item.title}</a></div>
+					</c:forEach>
+				</div>
 			</div>
 		</div>
 	</div>
