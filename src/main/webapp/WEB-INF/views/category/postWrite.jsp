@@ -7,9 +7,13 @@
 	<link rel="stylesheet" href="/resources/css/reset.css" />
 	<link rel="stylesheet" href="/resources/css/postWrite.css" />
 	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<!-- 	<script src="/resources/js/postWrite.js"></script> -->
+
 	<script type="text/javascript">
+
 		window.onload = function () {
+				var boardName = "";
+				boardName = $('.nav > select > option').val();
+				
 				$('.modifyBtn').show();
 				$('.insertBtn').show();
 		
@@ -23,6 +27,43 @@
 				$('.insertBtn').hide();
 				$('.nav > h1').html("게시글 수정")
 			}
+			if(boardName = "공지사항") {
+
+				$('.insertBtn').click(function(){
+					let title = $('#title').val()
+					let content = $('#content').val()
+					let owner = $('#owner').val()
+
+					let data = {
+						"np_title": title,
+						"np_content": content,
+						"np_owner": owner
+					}
+					//alert(JSON.stringify(data));
+
+					if(!confirm('추가하시겠습니까?')) {return;}
+					//ajax 통신
+					$.ajax ({
+						url : "/noticePost",
+						type : "put",
+						data : JSON.stringify(data),
+						contentType : "application/json",
+						success : function(data) {
+							if(data.status =='success') {
+								alert(data.message);
+								location.href="/category/noticeBoard"
+							}
+							else{
+								alert('입력실패');
+							}
+						},
+						error : function(e) {
+							alert("에러");
+							console.log(e);
+						}
+					})
+				})
+			}
 		}
 	</script>
 </head>
@@ -32,12 +73,12 @@
 		<select name="category" disabled><!--보드시퀀스를 받아서 넣기 -->
 			<option>${param.boardName}</option>
 		</select>
-		
+	
 		<h1>게시글 추가</h1>
 		
-		<div><input type="text" placeholder="제목을 입력하세요" /></div>
-		<div><textarea placeholder="내용을 입력하세요"></textarea></div>
-<!-- 		<div>작성자 : (세션아이디주기)</div> -->
+		<div><input type="text" id="title" placeholder="제목을 입력하세요" /></div>
+		<div><textarea id="content" placeholder="내용을 입력하세요"></textarea></div>
+		<div><input type="text" id="owner" value="${user}" disabled style="display:none"	></div>
 		
 		<div class="btnArea">
 			<button class="backBtn">뒤로가기</button>

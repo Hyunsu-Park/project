@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.health.mapper.UserMapper;
 import com.health.vo.LoginVO;
+import com.health.vo.UserInfoVO;
 
 @Service
 public class UserService {
@@ -12,5 +13,8 @@ public class UserService {
 	UserMapper mapper;
 	public Integer userLogin(LoginVO vo) {
 		return mapper.userLogin(vo);
+	}
+	public UserInfoVO selectUserInfo(String id) {
+		return mapper.selectUserInfo(id);
 	}
 }

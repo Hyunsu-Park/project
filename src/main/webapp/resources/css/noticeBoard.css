@@ -50,31 +50,38 @@ h1 {
 	white-space : nowrap;
 	overflow: hidden;
 }
-.contentArea > div {
+.contentArea > form > div {
 	display: inline-block;
-	margin-top: 14px;
+	margin-top: 10px;
 	font-size: 16px;
 	font-weight: 550;
 	text-align: center;
 }
-.contentArea > div:nth-child(1) {
+.contentArea > form > div:nth-child(1) {
 	width: 5%;
 	min-width: 60px;
 }
-.contentArea > div:nth-child(2) {
+.contentArea > form > div:nth-child(2){
 	width: 68%;
 	min-width: 200px;
 	text-align: left;
+
 }
-.contentArea > div:nth-child(3) {
+.contentArea > form > div:nth-child(2) input {
+	border:1px solid #eee;
+	font-size: 16px;
+	font-weight: 550;
+	cursor: pointer;
+}
+.contentArea > form > div:nth-child(3) {
 	width: 7%;
 	min-width: 60px;
 }
-.contentArea > div:nth-child(4) {
+.contentArea > form > div:nth-child(4) {
 	width: 14%;
 	min-width: 106px;
 }
-.contentArea > div > a {
+.contentArea > form > div > a {
 	text-decoration: none;
 } 
 

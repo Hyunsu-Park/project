@@ -8,11 +8,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class FreePostVO {
-	private Integer fp_seq;
-	private String fp_title;
-	private String fp_content;
-	private String fp_owner;
-	private Integer fp_like;
-	private Integer fp_dis_like;
-	private Date fp_reg_date;
+	private Integer seq;
+	private String title;
+	private String content;
+	private String owner;
+	private Integer like;
+	private Integer dis_like;
+	private Date dt;
 }

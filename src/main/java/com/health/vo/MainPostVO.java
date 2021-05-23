@@ -8,6 +8,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class MainPostVO {
+    private Integer seq;
     private String title;
+    private String content;
+    private String owner;
+    private Integer type;    
     private Date dt;
 }

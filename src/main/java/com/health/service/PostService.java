@@ -30,4 +30,11 @@ public class PostService {
 	public List<MainPostVO> selectMainNoticePost(Integer num) {
 		return mapper.selectMainNoticePost(num);
 	}
+
+	public void insertNoticePost(NoticePostVO vo) {
+		mapper.insertNoticePost(vo);
+	}
+	public void updateNoticePost(NoticePostVO vo) {
+		mapper.updateNoticePost(vo);
+	}
 }

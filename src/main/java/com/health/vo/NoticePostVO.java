@@ -8,9 +8,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class NoticePostVO {
-	private Integer np_seq;
-	private String np_title;
-	private String np_content;
-	private String np_owner;
-	private Date np_reg_date;
+	private Integer seq;
+	private String title;
+	private String content;
+	private String owner;
+	private Date dt;
 }

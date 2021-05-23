@@ -2,21 +2,45 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.health.mapper.PostMapper">
 	<select id="selectPostList" resultType="com.health.vo.FreePostVO">	<!-- 자유게시판 최신게시글들 -->
-		SELECT * FROM free_post ORDER BY fp_seq DESC LIMIT #{num}
+		SELECT fp_seq AS seq, fp_title AS title, fp_content AS content, fp_owner AS owner, fp_like AS like, fp_dis_like AS dis_like, fp_reg_date AS dt
+			FROM free_post 
+		ORDER BY seq DESC LIMIT #{num}
 	</select>
 	<select id="selectNoticeList" resultType="com.health.vo.NoticePostVO">	<!-- 공지사항게시판 최신게시글들 -->
-		SELECT * FROM notice_post ORDER BY np_seq DESC  LIMIT #{num}
+		SELECT np_seq AS seq, np_title AS title, np_content AS content, np_owner AS owner, np_reg_date AS dt
+			FROM notice_post
+		ORDER BY seq DESC LIMIT #{num}
 	</select>
 	
 	<select id="selectQnAList" resultType="com.health.vo.QnAPostVO">	<!-- QnA 최신게시글들 -->
 		SELECT * FROM qna_post ORDER BY qp_seq DESC LIMIT #{num}
 	</select>
 
-	<select id="selectMainFreePost" resultType="com.health.vo.MainPostVO">
-		SELECT fp_title AS title, fp_reg_date AS dt FROM free_post ORDER BY dt DESC LIMIT #{num}
+	<select id="selectMainFreePost" resultType="com.health.vo.MainPostVO">	<!-- Main에 뜨는 자유게시글 최신 5개 -->
+		SELECT fp_title AS title, fp_content AS content, fp_owner AS owner, fp_reg_date AS dt 
+			FROM free_post
+		ORDER BY dt DESC LIMIT #{num} 
 	</select>
 
-	<select id="selectMainNoticePost" resultType="com.health.vo.MainPostVO">
-		SELECT np_title AS title, np_reg_date AS dt FROM notice_post ORDER BY dt DESC LIMIT #{num}
+	<select id="selectMainNoticePost" resultType="com.health.vo.MainPostVO">	<!-- Main에 뜨는 공지 최신 5개 -->
+		SELECT np_title AS title, np_content AS content, np_owner AS owner, np_reg_date AS dt 
+		FROM notice_post
+		ORDER BY dt DESC LIMIT #{num} 
 	</select>
+
+	<insert id="insertNoticePost">		<!-- 공지추가-->
+		INSERT INTO notice_post(np_title, np_content, np_owner)
+		VALUES (#{np_title}, #{np_content}, #{np_owner} )
+	</insert>
+
+	<update id="updateNoicePost">		<!-- 공지수정-->
+		UPDATE notice_post 
+		SET np_title=#{np_title}, np_content=#{np_content}, np_owner=#{np_owner}
+	</update>
+	
+	<!-- <select id="selectPost">
+
+	</select>  조인 써서 notice와 free 게시판 글들 중 title 과 seq 를 받아서 가져오기?
+	 				아니면 아예 공지와 자유게시판을 따로 만들어주기 2번이 나을듯
+	-->
 </mapper>

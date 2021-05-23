@@ -10,8 +10,15 @@
 	<link rel="stylesheet" href="/resources/css/reset.css" />
 	<link rel="stylesheet" href="/resources/css/noticeBoard.css" />
 	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		//window.onload = function() {
+
+		//}
+		
+	</script>
 </head>
 <body>
+
 	<div class="noticeBoard">
 		<h1> 공지사항 </h1>
 		<div class="titleArea">
@@ -19,15 +26,19 @@
 			<div>제목</div>
 			<div>작성자</div>
 			<div>날짜</div>
-<!-- 			<div>조회수</div> -->
+		<!--<div>조회수  넣을까 말까 고민중</div> -->
 		</div>
 		<c:forEach items="${noticeList}" var="item">
 			<div class="contentArea">
-				<div>${item.np_seq}</div>
-				<div><a href="">${item.np_title}</a></div>
-				<div>${item.np_owner}</div>
-				<div>${item.np_reg_date}</div>
-<!-- 				<div>조회수</div> -->
+				<form action="/category/postDetail" method="get">
+					<div>${item.seq}</div>
+					<div>
+						<input type="submit" name="noticeTitle" value="${item.title}">
+					</div>
+					<div>${item.owner}</div>
+					<div>${item.dt}</div>
+				</form>
+			<!--<div>조회수 넣을까 말까 고민중</div> -->
 			</div>
 		</c:forEach>
 

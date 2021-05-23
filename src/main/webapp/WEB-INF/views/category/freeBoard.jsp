@@ -17,9 +17,6 @@
 	</script>
 </head>
 <body>
-<!-- 			$('.addBtn').click(function(){ -->
-<!-- 				location.href="/category/postWrite" -->
-<!-- 			}) -->
 	<div class="freeBoard">
 		<h1>자유게시판</h1>
 		
@@ -32,14 +29,12 @@
 		</div>
 		<c:forEach items="${postList}" var="item">
 			<div class="contentArea">
-				<div>${item.fp_seq}</div>
-				<div><a href="#">${item.fp_title}</a></div>
-				<div>${item.fp_owner}</div>
-				<div>${item.fp_reg_date}</div>
-				<div>${item.fp_like}</div>
-				<!-- <button class="delete">삭제</button> 	들어가서 삭제하기 		
-							세션데이터로 등급받아서 관리자+작성자 삭제기능 //들어가면 수정도 가능하게  -->
-							<!-- 안쪽에 조회수도 만들어주면 좋고 아니면 말구	<div>조회수</div> -->
+				<!--폼태그로 작성-->
+				<div>${item.seq}</div>
+				<div><a href="/category/postWrite">${item.title}</a></div>
+				<div>${item.owner}</div>
+				<div>${item.dt}</div>
+				<div>${item.like}</div>
 			</div>
 			
 		</c:forEach>

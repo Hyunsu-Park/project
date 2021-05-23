@@ -16,4 +16,7 @@ public interface PostMapper {
 	public List<QnAPostVO> selectQnAList(Integer num);
 	public List<MainPostVO> selectMainFreePost(Integer num);
 	public List<MainPostVO> selectMainNoticePost(Integer num);
+	
+	public void insertNoticePost(NoticePostVO vo);
+	public void updateNoticePost(NoticePostVO vo);
 }

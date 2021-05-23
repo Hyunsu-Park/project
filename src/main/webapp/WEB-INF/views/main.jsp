@@ -57,11 +57,27 @@
 				<div class="postBoard">
 					<h1>최신 게시글</h1>
 					<c:forEach items="${noticeList}" var="item">
-						<div>[공지]<a href="/category/noticeBoard">${item.title}</a></div>
+						<div>
+							<form action="/category/postDetail" method="get">
+								<input type="text" name="noticeContent" value="${item.content}">
+								<input type="text" name="noticeDt" value="${item.dt}">
+								<input type="text" name="noticeOwner" value="${item.owner}">
+								<input type="text" name="noticeType" value="${item.type}">
+								<input type="submit" name="noticeTitle" value="[공지]${item.title}">
+							</form>
+						</div>
 					</c:forEach>
 					<c:forEach items="${freeList}" var="item">
-						<div>[자유]<a href="/category/freeBoard">${item.title}</a></div>
-					</c:forEach>
+						<div>
+							<form action="/category/postDetail" method="get">
+								<input type="text" name="freeContent" value="${item.content}">
+								<input type="text" name="freeDt" value="${item.dt}">
+								<input type="text" name="freeOwner" value="${item.owner}">
+								<input type="text" name="freeType" value="${item.type}">
+								<input type="submit" name="freeTitle" value="[자유]${item.title}">
+							</form>
+						</div>
+					</c:forEach>	
 				</div>
 			</div>
 		</div>

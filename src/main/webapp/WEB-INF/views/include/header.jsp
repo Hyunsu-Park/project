@@ -24,7 +24,7 @@
 			<button>검색</button>
 		</div>
 		<div class="userBox">
-			<span>관리자님 환영합니다.</span>
+			<span>${user}님 환영합니다.</span>
 			<a href="/user/logout">로그아웃</a>
 		</div>
 	</div>

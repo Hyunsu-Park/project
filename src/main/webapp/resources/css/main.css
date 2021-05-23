@@ -145,6 +145,25 @@ div > a> img {
     text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.postArea > .postBoard > div > form > input:nth-child(1){
+	display: none;
+}
+.postArea > .postBoard > div > form > input:nth-child(2){
+	display: none;
+}
+.postArea > .postBoard > div > form > input:nth-child(3){
+	display: none;
+}
+.postArea > .postBoard > div > form > input:nth-child(4){
+	display: none;
+}
+.postArea > .postBoard > div > form > input:nth-child(5) {
+	border: #fff;
+	background-color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
 
 .postArea > .shopBaord {
 	display: inline-block;

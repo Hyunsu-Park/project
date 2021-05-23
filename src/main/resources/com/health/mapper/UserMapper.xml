@@ -3,5 +3,8 @@
 <mapper namespace="com.health.mapper.UserMapper">
 	<select id="userLogin" resultType="java.lang.Integer">
 		SELECT count(*) FROM user_info WHERE ui_id=#{id} and ui_pwd=#{pwd}
-	</select>	
+	</select>
+	<select id="selectUserInfo" resultType="com.health.vo.UserInfoVO">
+		SELECT * FROM user_info WHERE ui_id=#{id}
+	</select>
 </mapper>

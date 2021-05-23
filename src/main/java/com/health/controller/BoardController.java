@@ -3,7 +3,6 @@ package com.health.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -82,8 +81,11 @@ public class BoardController {
 	
 	@GetMapping("/category/postWrite")
 	public String getPostWrite() {
+	
 		return "/category/postWrite";
 	}
+
+
 	@GetMapping("/category/shopWrite")
 	public String getShopWrite(Model model) {
 		
@@ -97,7 +99,10 @@ public class BoardController {
 	public String getQnAWrite() {
 		return "/category/QnAWrite";
 	}
-	
+	@GetMapping("category/postDetail")
+	public String getPostDetail() {
+		return "/category/postDetail";
+	}
 //	@GetMapping("/category/QnABoard/question")
 //	public String getQuestion() {
 //		return "/category/question";

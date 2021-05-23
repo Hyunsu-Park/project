@@ -9,6 +9,42 @@
 	<link rel="stylesheet" href="/resources/css/login.css" />
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="/resources/js/login.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			$(function(){
+				$(".loginBtn").click(function(){
+					let id = $(".id").val();
+					let pwd = $(".pwd").val();
+			
+					let data= {
+						id : id,
+						pwd : pwd
+					}
+				//alert(JSON.stringify(data))
+				
+					$.ajax({
+						url : "/user/login",
+						type : "post",
+						contentType : "application/json",
+						data : JSON.stringify(data),
+						success : function(data) {
+							if(data.status == 'success'){
+								location="/";
+								alert(data.message);
+							}
+							else{
+								alert(data.message);
+							}
+						},
+						error : function(e){
+							console.log(e);
+						}
+					})
+				})	
+			})
+		}
+	</script>
+
 </head>
 <body>
 	<div class="loginBox">
